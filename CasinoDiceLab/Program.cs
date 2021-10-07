@@ -12,55 +12,87 @@ namespace CasinoDiceLab
             bool runProgram = true;
             while (runProgram)
             {
-                Console.WriteLine("Choose the number of sides for your dice");
-                int sides = int.Parse(Console.ReadLine());
-                
-                diceRoller(sides);
-                
+                int sides = 0;
 
+                //surround user input with trycatch
+                while (true)
+                {
+                    try
+                    {
+                        Console.WriteLine("Choose the number of sides for your dice");
+                        sides = int.Parse(Console.ReadLine());
+                        if (sides <= 0)
+                        {
+                            throw new Exception("Your entry is too low fool.");
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                    catch (FormatException e)
+                    {
+                        Console.WriteLine("That wasn't a valid input.");
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                }
+
+                //diceRoller(sides);
+                int num1 = rollDice(sides);
+                int num2 = rollDice(sides);
+                Console.WriteLine($"You rolled a {num1} and a {num2}. Your total is {num1 + num2}");
+                if (sides == 6)
+                {
+                    displayCombinations(num1, num2);
+                }
                 runProgram = getContinue();
             }
         }
 
         //method to implement output for different 6 sided dice combinations
 
-        static void sixSides(int dice1, int dice2)
+        static void displayCombinations(int num1, int num2)
         {
-            if (dice1 == 1 && dice2 == 1)
+            if (num1 == 1 && num2 == 1)
             {
                 Console.WriteLine("You got sssssnake eyes!");
             }
+            if (num1 == 1 && num2 == 2)
+            {
+                Console.WriteLine("You got an Ace Deuce");
+            }
+            if (num2  == 1 && num1 == 2)
+            {
+                Console.WriteLine("You got an Ace Deuce");
+            }
+            if (num1 == 6 && num2 == 6)
+            {
+                Console.WriteLine("You got box cars.");
+            }
+            if(num2 == 6 && num1 == 6)
+            {
+                Console.WriteLine("You got box cars.");
+            }
+            int total = num1 + num2;
+            if (total == 7 || total == 11)
+            {
+                Console.WriteLine("You won.");
+            }
+            if (total == 2 || total == 3 || total == 12)
+            {
+                Console.WriteLine("Craps. You lost");
+            }
+
         }
-        
-        //method to generate random numbers
-        static int diceRoller(int sides)
-        {
-            int result = 0;
-            Random rand = new Random();
-            int dice1 = rand.Next(1, sides);
-            int dice2 = rand.Next(1, sides);
-            int total = dice1 + dice2;
+        static int rollDice(int sides)
+    {
+        Random r = new Random();
+        return r.Next(1, sides + 1);
+    }
 
-            Console.WriteLine($"You rolled a {dice1} and a {dice2}. Your total is {total}");
-
-            //if(sides == 6 && dice1 == 1 && dice2 == 1)
-            //{
-            //    Console.WriteLine("You rolled a ssssnake eyes");
-            //}
-            //else if (sides == 6 && (dice1 == 1 && dice2 == 2) || (dice2 == 1 && dice1 == 2))
-            //{
-            //    Console.WriteLine("You rolled an ace deuce");
-            //}
-            //else if (sides == 6 && dice1 == 6 && dice2 == 6)
-            //{
-            //    Console.WriteLine("You rolled a box cars.");
-            //}
-            
-
-            return result;
-        }
-
-        
         //method to continue yes or no
         static bool getContinue()
         {
@@ -88,4 +120,5 @@ namespace CasinoDiceLab
             return result;
         }
     }
+    
 }
