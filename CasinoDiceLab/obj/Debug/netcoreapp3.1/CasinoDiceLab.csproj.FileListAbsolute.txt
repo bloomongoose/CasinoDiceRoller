@@ -1,0 +1,14 @@
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\bin\Debug\netcoreapp3.1\CasinoDiceLab.exe
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\bin\Debug\netcoreapp3.1\CasinoDiceLab.deps.json
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\bin\Debug\netcoreapp3.1\CasinoDiceLab.runtimeconfig.json
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\bin\Debug\netcoreapp3.1\CasinoDiceLab.runtimeconfig.dev.json
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\bin\Debug\netcoreapp3.1\CasinoDiceLab.dll
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\bin\Debug\netcoreapp3.1\CasinoDiceLab.pdb
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\obj\Debug\netcoreapp3.1\CasinoDiceLab.csproj.AssemblyReference.cache
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\obj\Debug\netcoreapp3.1\CasinoDiceLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\obj\Debug\netcoreapp3.1\CasinoDiceLab.AssemblyInfoInputs.cache
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\obj\Debug\netcoreapp3.1\CasinoDiceLab.AssemblyInfo.cs
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\obj\Debug\netcoreapp3.1\CasinoDiceLab.csproj.CoreCompileInputs.cache
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\obj\Debug\netcoreapp3.1\CasinoDiceLab.dll
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\obj\Debug\netcoreapp3.1\CasinoDiceLab.pdb
+C:\Users\radee\source\repos\CasinoDiceLab\CasinoDiceLab\obj\Debug\netcoreapp3.1\CasinoDiceLab.genruntimeconfig.cache
